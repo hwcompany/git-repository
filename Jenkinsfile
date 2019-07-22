@@ -6,9 +6,9 @@ pipeline {
         echo 'hello'
       }
     }
-    stage('') {
+    stage('error') {
       steps {
-        svn 'https://liun-pc/svn/opac/trunk/indexer'
+        svn 'https://192.168.88.31/svn/opac/trunk/indexer'
       }
     }
   }
