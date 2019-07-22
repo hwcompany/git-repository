@@ -8,7 +8,7 @@ pipeline {
     }
     stage('') {
       steps {
-        svn 'https://192.168.88.31/svn/opac/trunk/indexer'
+        sh ' svn checkout https://192.168.88.31/svn/opac/trunk/indexer --username=jenkins --password=libsys'
       }
     }
   }
